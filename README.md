@@ -60,4 +60,32 @@ class Department:
 
 ### 3. Company Class
 In company class we are able to add department remove department and we can list all departments
+```python
+class Company:
+    def __init__(self):
+        self.dept_dict = {}
+    #adding a department
+    def add_department(self, dept_name):
+        if dept_name not in self.dept_dict:
+            self.dept_dict[dept_name] = Department(dept_name)
+            print(f"{dept_name} Department Added Successfully!!")
+        else:
+            print(f"{dept_name} Department Already Exists")
 
+    #remove department
+    def remove_department(self, dept_name):
+        if dept_name in self.dept_dict:
+            del self.dept_dict[dept_name]
+            print(f"{dept_name} Department Removed Successfully!!")
+        else:
+            print(f"{dept_name} Department Not exists!!")
+
+    #displaying department
+    def display_departments(self):
+        print("Departments:")
+        if len(self.dept_dict) != 0:
+            for dept in self.dept_dict:
+                print(dept)
+        else:
+            print("No records added")
+```
