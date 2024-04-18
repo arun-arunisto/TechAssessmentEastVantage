@@ -25,4 +25,39 @@ class Employee:
     def __str__(self):
         return f"Employee Id: {self.emp_id} | Employee Name: {self.emp_name}"
 ```
-### 2. 
+### 2. Department Class
+In Department class there's we have options to add, remove, display all employees. To save the employee data we are using list here.
+```python
+#2. Department Class
+class Department:
+    def __init__(self, dept_name):
+        self.dept_name = dept_name
+        self.emp_list = [] #to store the employees data
+    #add an employee
+    def add_employee(self, employee):
+        self.emp_list.append(employee)
+        print("Employee Added Successfully!!")
+
+    #remove an employee
+    def remove_employee(self, emp_id):
+        for emp in self.emp_list:
+            if emp.emp_id == emp_id:
+                self.emp_list.remove(emp)
+                print(f"Employee {emp_id} removed from {self.dept_name} Department")
+                return
+        else:
+            print(f"No data available for Employee ID {emp_id}")
+
+    #listing all employee
+    def all_employee(self):
+        print(f"Employees in {self.dept_name} Department")
+        if len(self.emp_list) != 0:
+            for emp in self.emp_list:
+                print(emp)
+        else:
+            print("No records found!!")
+```
+
+### 3. Company Class
+In company class we are able to add department remove department and we can list all departments
+
