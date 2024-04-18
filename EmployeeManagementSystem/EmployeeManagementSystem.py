@@ -1,4 +1,3 @@
-import json
 #Employee Management System
 
 #1. Employee Class
