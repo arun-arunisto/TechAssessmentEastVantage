@@ -118,3 +118,4 @@ The `Exit` option will stop the program and exit and `Company Dashboard` will na
 [1] Department [2] Employee [3] Back 
 Select the option:
 ```
+If you select the `Back` option it will navigate you to the main page and if you select the `Department` option it will navigate you to the options for `Add`,`Remove`,and `Display` the departments. Always remember that First you need to add a department then only you will able to do other activities of the program. So, first you need to add a department then you can click `Back` option to navigate to previous options then select `Employee` option to add, remove, display the employee details. If you try to add an employee on not existing department will display the result `Department not found`.
