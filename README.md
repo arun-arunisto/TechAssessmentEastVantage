@@ -103,3 +103,18 @@ After cloning the repo change your directory to `EmployeeManagementSystem` using
 ```Command
 cd EmployeeManagementSystem
 ```
+
+After change the directory run the file using below command
+```Command
+python EmployeeManagementSystem.py
+```
+After running the above command you will get 2 options to select first
+```Command
+[1] Company Dashboard [2] Exit
+Select the option: 
+```
+The `Exit` option will stop the program and exit and `Company Dashboard` will navigate to other options like below 
+```Command
+[1] Department [2] Employee [3] Back 
+Select the option:
+```
