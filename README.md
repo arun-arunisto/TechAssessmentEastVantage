@@ -96,5 +96,10 @@ Inside the main method i write all other programming workflow that able to acces
 ## Workflow
 Program worflow, first you need to clone this repo using `git clone` command, like below
 ```Command
-git clone 
+git clone https://github.com/arun-arunisto/TechAssessmentEastVantage
+```
+
+After cloning the repo change your directory to `EmployeeManagementSystem` using below command
+```Command
+cd EmployeeManagementSystem
 ```
